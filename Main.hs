@@ -44,9 +44,9 @@ fluxoAdd inv = do
   idItem <- getLine
   putStr "nome: " >> hFlush stdout
   nomeItem <- getLine
-  putStr "qtd: "  >> hFlush stdout
+  putStr "quantidade: "  >> hFlush stdout
   qntStr <- getLine
-  putStr "cat: "  >> hFlush stdout
+  putStr "categoria: "  >> hFlush stdout
   cat <- getLine
 
   let qnt  = read qntStr
@@ -69,7 +69,7 @@ fluxoRemove :: Inventario -> IO ()
 fluxoRemove inv = do
   putStr "id: "  >> hFlush stdout
   idItem <- getLine
-  putStr "qtd: " >> hFlush stdout
+  putStr "quantidade: " >> hFlush stdout
   qntStr <- getLine
   let qnt = read qntStr
 
@@ -90,14 +90,14 @@ fluxoUpdate :: Inventario -> IO ()
 fluxoUpdate inv = do
   putStr "id: "  >> hFlush stdout
   idItem <- getLine
-  putStr "qtd: " >> hFlush stdout
+  putStr "quantidade: " >> hFlush stdout
   qntStr <- getLine
   let qnt = read qntStr
 
   tmp <- getCurrentTime
   case updateQty tmp idItem qnt inv of
     Left erro -> do
-      appendLog (LogEntry tmp Update ("id=" ++ idItem ++ " q=" ++ show qnt) (Falha erro))
+      appendLog (LogEntry tmp Update ("id=" ++ idItem ++ " quantidade=" ++ show qnt) (Falha erro))
       putStrLn ("Erro: " ++ erro)
       loop inv
     Right (invNovo, logGerado) -> do
@@ -133,6 +133,7 @@ printItem itemAtual =
   putStrLn (
     "id="  ++ itemID itemAtual ++
     " nome=" ++ nome itemAtual ++
-    " q="    ++ show (quantidade itemAtual) ++
-    " cat="  ++ categoria itemAtual
+    " quantidade="    ++ show (quantidade itemAtual) ++
+    " categoria="  ++ categoria itemAtual
   )
+
