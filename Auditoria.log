@@ -1,0 +1,13 @@
+LogEntry {timestamp = 2025-11-14 23:07:24.2811864 UTC, acao = List, detalhes = "list", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:08:12.9472254 UTC, acao = Add, detalhes = "id=1", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:08:26.438335 UTC, acao = Add, detalhes = "id=2", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:08:47.9295006 UTC, acao = Add, detalhes = "id=3", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:09:03.691214 UTC, acao = Add, detalhes = "id=4", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:09:16.506132 UTC, acao = Add, detalhes = "id=5", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:09:30.4485641 UTC, acao = Add, detalhes = "id=6", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:09:51.3642041 UTC, acao = Add, detalhes = "id=7", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:10:03.992525 UTC, acao = Add, detalhes = "id=8", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:10:18.7223058 UTC, acao = Add, detalhes = "id=9", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:10:33.0492084 UTC, acao = Add, detalhes = "id=10", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:10:35.6480191 UTC, acao = List, detalhes = "list", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 23:11:09.5351228 UTC, acao = List, detalhes = "list", status = Sucesso}
